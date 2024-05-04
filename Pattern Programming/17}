@@ -1,0 +1,38 @@
+void alphaHill(int n) {
+    // Write your code here.
+        int i , j ;
+        char d;
+        char ch = 'A';
+        char ch1= 'A';
+    for(i=1 ; i <=n ; i++)
+    {
+        for (j=i ; j < n ; j++)
+        {
+            cout << "  ";
+        }
+        for (j=1 ; j <=i ; j++)
+        {
+            cout << ch << " ";
+            ch++;
+        }
+        ch = 'A';
+        d = ch1;
+        for (j=2 ; j <= i ; j++)
+        {
+            cout << d << " ";
+            d--;
+        }
+    
+        if ( i==1)
+        {
+                ch1='A';
+            cout << "\n";
+            continue;
+        }
+        else{
+            ch1++;
+        }
+        
+        cout << "\n";
+    }
+}

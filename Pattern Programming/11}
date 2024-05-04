@@ -1,0 +1,25 @@
+void nBinaryTriangle(int n) {
+    // Write your code here.
+        int i , j , a , b , c;
+        a=0;
+        b=1;
+
+    for(i=1 ; i <= n ; i++)
+    {
+      for (j = 1; j <= i; j++) {
+        if ( j%2 ==0)
+        {
+            cout << a << " ";
+        }
+        else
+        {
+            cout << b << " ";
+        }
+      }
+        c = a;
+        a = b;
+        b = c;    
+        cout << "\n";
+    }
+  
+}

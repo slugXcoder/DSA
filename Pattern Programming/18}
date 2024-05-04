@@ -1,0 +1,17 @@
+void alphaTriangle(int n) {
+    // Write your code here.
+        int i , j ;
+        char d;
+        char ch ='A';
+    for(i=1 ; i <=n ; i++)
+    {
+        d =ch+n-1;;
+        for (j=1 ; j <= i ; j++)
+        {
+            cout << d << " ";
+            d--;
+        }
+        cout <<"\n";
+    }
+
+}

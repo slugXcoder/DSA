@@ -1,0 +1,14 @@
+void nLetterTriangle(int n) {
+    // Write your code here.
+    char l = 'A';
+    	for (int i = 1 ;i <= n ;i++)
+	{
+		for (int j =1 ; j <=i; j++)
+		{
+			cout << l  << " ";
+            l++;
+		}
+        l = 'A';
+		cout <<"\n";
+	}
+}
